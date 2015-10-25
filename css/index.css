@@ -64,6 +64,11 @@ em {
 div {
     color:black;
 }
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 
       :root {
         --paper-toolbar-background: #00bcd4;
