@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>The NIST App</title>
+        <link rel="import" href="bower_components/paper-button/paper-button.html">
+        <link rel="import" href="bower_components/font-roboto/roboto.html">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+        <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+        <link rel="import" href="bower_components/iron-dropdown/iron-dropdown.html">
+        <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+        <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+        <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
+
+        <script src="cordova.js"></script> 
+<script type="text/javascript" charset="utf-8">
+
+
+function onLoad() {
+document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+// cordova is ready
+//
+function onDeviceReady() {
+ 
+}
+</script>
+        <script src="bower_components/webcomponentsjs/webcomponents.js"> </script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"> </script>
+        <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="googlemap.js"></script>      
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"> </script>
+    <script>
+function show(shown, hi1, hi2, hi3, hi4) {
+    document.getElementById(shown).style.display='block';
+    document.getElementById(hi1).style.display='none';
+    document.getElementById(hi2).style.display='none';
+    document.getElementById(hi3).style.display='none';
+    document.getElementById(hi4).style.display='none';
+  return false;
+}
+                </script>
+    <script>
+    function onDeviceReady(){
+    var map = new GoogleMap();
+    map.initialize();
+}
+        </script>
+        
+</head>
+    <body onLoad="onLoad()"><div class="header">
+    <div class="button">
+        <div class="center" fit><a href="#" class="horizontal center-center layout" onclick="return show('About','Page2','Page3','Page4','Page1');"><img src="NIST.png" height="83" width="200"></a></div>
+      <paper-ripple></paper-ripple>
+    </div>
+        </div>a
+        <div id="white">
+        <paper-tabs selected="0">
+            
+            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page1','Page2','Page3','Page4','About');">Life at NIST</a>
+            </paper-tab>
+            
+            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page2','Page1','Page3','Page4','About');">Getting to School</a>
+            </paper-tab>
+            
+            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page3','Page2','Page1','Page4','About');">Quick Links</a>
+            </paper-tab>
+            
+            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page4','Page2','Page3','Page1','About');">Cafeteria Menu</a>
+            </paper-tab>
+            
+    </paper-tabs>
+            </div>
+    </body>
+    <div id="Page1" style="display:none">
+        <div class="Title">NIST username and password details</div>
+            <div class="Para">Student login details are stored on an online server,  where they are synchronized for use by different software programs NIST offers. This means that your NIST login can be used to access the following:
+        <ul id="paralist">
+                <li>Veracross</li>
+                <li>NIST Portal (portal2.nist.ac.th)</li>
+                <li>Resource Portal</li>
+                <li>NIST Library Website</li>
+                </ul>
+            However, School-issued Macbooks do not use the password server, and can be different from the NIST login. <br>
+            <div class="paracenter">To change your NIST password, open the menu on Veracross, or go to the <a href="#" onclick="window.open('http://portal2.nist.ac.th/community/tsc/Wiki%20Pages/Change%20Password.aspx', '_blank', 'location=yes,enableviewportscale=yes');">Tech Support Portal</a>     
+    </div>
+        </div>
+        <div class="Title">Class Schedule and Locations</div>
+            <div class="Para">To find your class schedule, log onto <a href="#" onclick="window.open('http://portals.veracross.com/nist', '_system', 'location=yes,enableviewportscale=yes');">Veracross</a> with your NIST username and password, and select <em>Current Class Schedule</em>. 
+        <div class="header"><img src="Schedule.png"></div>
+        <div class="paracenter">The schedule can be printed or downloaded as a PDF Document.</div>
+                These are the parts to your schedule:
+                <br>Annotated Image
+                <br>*Insert School Map*
+                
+        </div>
+    
+                                    </div>
+
+    <div id="Page2" style="display:none">
+        <div class="Title">BTS</div>
+            <div class="Para">NIST is accessible to pedestrians via the Asoke BTS station. A shuttle to NIST is available in the mornings, for an easier commute to school. The shuttle can be found parked in front of <em>th is restaurant</em>, and is available for teachers as well as students.
+                <br><br>When taking a BTS Skytrain, exit at the Asok station (E4), and leave through Exit #5. Follow the bridge and exit down the stairs in front of the Westin Hotel. Continue straight until you reach Sukhumvit Soi 15. Walk down Soi 15 until you see NIST on your right hand side.
+                </div>
+        <div class="Title">MRT</div>
+            <div class="Para">Exit at Sukhumvit Station, and leave through Exit 5. Follow the bridge and exit down the stairs in front of the Westin Hotel. Enter Sukhumvit Soi 15, and walk down the street until you see the entrance to NIST.</div>
+        <div class="Title">Pedestrian Path via Sukhumvit Soi 15</div>
+            <div class="Para">When walking to NIST from Sukhumvit Soi 15, follow the road as in the images below.<br><em>*Images*</em></div>
+        <div class="Title">Personal Car</div>
+            <div class="Para">Enter at Sukhumvit Soi 15, and drive down Soi 15 until you see NIST on your right hand side. Two parking lots are avaiable near the NIST campus, and are available for cars and motorcycles.</div>
+        <div class="Title">Taxi/Motorbike</div>
+            <div class="Para">Instruct the Taxi/Motorbike driver to take you to Sukhumvit Soi 15 <em>(In Thai: sook-hum-vit soy seep-ha)</em>, and continue down Soi 15 until you see NIST on your right.</div>
+                                    
+        <div class="Title">Google Map</div>
+            <div class="Para"> A Google Map is available for easy access.
+                <br>Insert Map</div>
+        <div class="Title">Printable Map in Thai and English</div>
+            <div class="Para">These printable Thai and English Maps are available for easy navigation to the school. They can also be found on the NIST website.
+        <br> <br>
+        <div class="paracenter"><a href="#" onclick="window.open('LINK HERE', '_system', 'location=yes,enableviewportscale=yes');">English Map</a></div>
+                <br>
+        <div class="paracenter"><a href="#" onclick="window.open('LINK HERE', '_system', 'location=yes,enableviewportscale=yes');">Thai Map</a></div>
+            </div>
+                        </div>
+    
+    <div id="Page3" style="display:none">
+            <div class="Title">Quick Links for Daily Use</div>
+    </div>
+    
+    <div id="Page4" style="display:none">
+            <br>Content of page 4
+
+    </div>
+    
+    <div id="About">
+            <br>Content of page About
+        <br> Sources:
+        <ul>
+            <li>http://www.christianengvall.se/phonegap-and-google-maps/</li>
+            <li>Codecademy</li>
+            <li>Animations from Polymer Project</li>
+            <li>YouTube videos from the Paper tabs guy</li>
+            
+        
+        
+        </ul>
+        
+    </div>
+</html>
