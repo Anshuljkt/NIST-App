@@ -33,14 +33,16 @@ function onDeviceReady() {
         <script type="text/javascript" src="googlemap.js"></script>      
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"> </script>
     <script>
-function show(shown, hi1, hi2, hi3, hi4) {
-    document.getElementById(shown).style.display='block';
-    document.getElementById(hi1).style.display='none';
-    document.getElementById(hi2).style.display='none';
-    document.getElementById(hi3).style.display='none';
-    document.getElementById(hi4).style.display='none';
+    function show(shown, hi1, hi2, hi3, hi4) {
+        setTimeout (function showwithdelay() {
+            document.getElementById(shown).style.display='block';
+            document.getElementById(hi1).style.display='none';
+            document.getElementById(hi2).style.display='none';
+            document.getElementById(hi3).style.display='none';
+            document.getElementById(hi4).style.display='none';
   return false;
-}
+}, 400);
+    }
                 </script>
     <script>
     function onDeviceReady(){
