@@ -30,8 +30,6 @@ function onDeviceReady() {
         <script src="bower_components/webcomponentsjs/webcomponents.js"> </script>
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"> </script>
         <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
-        <script type="text/javascript" src="googlemap.js"></script>      
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"> </script>
     <script>
     function show(shown, hi1, hi2, hi3, hi4) {
         setTimeout (function showwithdelay() {
@@ -49,18 +47,6 @@ function onDeviceReady() {
     var map = new GoogleMap();
     map.initialize();
 }
-        </script>
-<script>
-    function Navigate (destination) {    
-    launchnavigator.navigate(
-  destination,
-  function(){
-      alert("Plugin success");
-  },
-  function(error){
-      alert("Plugin error: "+ error);
-  });
-    }
         </script>
         
 </head>
@@ -162,7 +148,7 @@ function onDeviceReady() {
             <div class="Para">Instruct the Taxi/Motorbike driver to take you to Sukhumvit Soi 15 <em>(In Thai: sook-hum-vit soy seep-ha)</em>, and continue down Soi 15 until you see NIST on your right.</div>
         <div class="Title">Google Map</div>
                 <div class="Para">A Google Map is included for added convenience.
-                    <a href="#" onclick="return Navigation('NIST International School');">Navigate to NIST</a>
+                    <div class="header"><a href="#" onclick="window.open('https://www.google.com/maps/place/NIST+International+School/@13.747438,100.559785,15z/data=!4m2!3m1!1s0x0:0x99b701e4da40e686', '_system', 'location=yes,enableviewportscale=yes');">Navigate to NIST International School</a></div>
                     </div>
         <div class="Title">Printable Map in Thai and English</div>
             <div class="Para">These printable <a href="#" onclick="window.open('https://www.nist.ac.th/wp-content/uploads/2014/10/NIST-International-School-Map-Thai.pdf', '_system', 'location=yes,enableviewportscale=yes');">Thai</a> and <a href="#" onclick="window.open('https://www.nist.ac.th/wp-content/uploads/2014/10/NIST-International-School-Map-English.pdf', '_system', 'location=yes,enableviewportscale=yes');">English</a> maps are available for easy navigation to the school. They can also be found on the NIST website.
