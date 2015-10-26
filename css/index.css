@@ -11,33 +11,46 @@
     }
                     
 paper-tab {
- color:white
+ color:white;
 }
+
 
 .header {
     text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 .Title {
     padding-top:5px;
     text-decoration: bold;
     font-family: 'Open Sans',sans-serif;
-    color: #ff1744;
+    color: #132e52;
     font-size: 1.2em;
+    padding-left: 4px;
+    padding-right: 4px;
     
 }
 .Para {
     color:black;
     font-size:0.8em;
+    font-weight: 800;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
-#white a{
+.white a{
     font-family:'Open Sans',sans-serif;
     color:white;
     text-decoration:none;
     font-size: 0.9em; 
 }
+.white a:hover {
+    color:white;
+    text-decoration:none;
+    cursor:pointer;
+}
 a {
-    color:#fb8c00;
+    color:blue;
 }
 #imgs {
     text-align: center;
@@ -45,8 +58,10 @@ a {
 
 .paracenter {
     text-align:center;
-    color:#0f9d58;
-    font-style:italic
+    color:#6f8f3a;
+    font-style:italic;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 a:hover {
     color:blue;
@@ -59,6 +74,8 @@ a:hover {
     font-style:italic;
     color:dimgrey;
     padding-top:0px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 em {
  color:dimgrey;
@@ -71,6 +88,7 @@ img {
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
+    
 }
 
       :root {
@@ -85,16 +103,19 @@ img {
       }
 
       paper-tabs, paper-toolbar,paper-tab.link {
-        background-color: #4285F4;
+        background-color: #132e52;
         color: #fff;
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-          object-position: static;
+        object-position: static;
+        
       }
 
       h3 {
         font-size: 16px;
         font-weight: 400;
         padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
       }
 /* Paper Ripple */
     .button {
