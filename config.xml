@@ -46,6 +46,7 @@
 		<gap:plugin name="org.apache.cordova.vibration"  />
         <gap:plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" />
     <icon src="icon.png" />
+    <!-- add "<gap:platform name="ios" />" if you want to build for iOS in the future. PGBuild is currently ignoring iOS.-->
     <gap:platform name="android" />
     <gap:platform name="winphone" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
