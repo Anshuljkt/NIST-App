@@ -141,3 +141,18 @@ img {
       background-color: #4285f4;
       color: #fff;
     }
+/* Paper Button */
+    paper-button {
+      display: block;
+        margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    paper-button[raised].colorful {
+      background: #132e52;
+      color: #fff;
+    }
+.Navigation a {
+    color:white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
