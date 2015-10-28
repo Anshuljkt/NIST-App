@@ -58,6 +58,11 @@ a {
 #imgs {
     text-align: center;
 }
+.centered {
+ padding-top: 4px;
+    text-align: center;
+    image align-content: center;
+}
 
 .paracenter {
     text-align:center;
