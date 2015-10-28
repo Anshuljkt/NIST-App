@@ -33,7 +33,6 @@
 		<preference name="BackgroundColor" value="0x000000"/>
 		<preference name="KeepRunning" value="true"/>
 		<preference name="DisallowOverscroll" value="true"/>
-		<preference name="LoadingDialog" value="Loading,Please Wait..."/> 
 		<preference name="LoadUrlTimeoutValue" value="30000" />
 		<preference name="disable-cursor" value="false" />
 		<feature name="http://api.phonegap.com/1.0/file"/>
