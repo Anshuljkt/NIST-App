@@ -120,7 +120,7 @@ img {
         padding-right: 0px;
       }
 /* Paper Ripple */
-    .button {
+    .headerbutton {
       display: inline-block;
       position: relative;
       width: inherit;
@@ -137,22 +137,24 @@ img {
       transition-delay: 0.2s;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     }
-    .button.blue {
-      background-color: #4285f4;
-      color: #fff;
-    }
 /* Paper Button */
+    .horizontal-section {
+      min-width: 130px;
+    }
+
     paper-button {
       display: block;
-        margin-top: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 24px;
     }
     paper-button[raised].colorful {
       background: #132e52;
       color: #fff;
     }
-.Navigation a {
+paper-button a {
     color:white;
     text-decoration: none;
     font-size: 1.2em;
+}
+paper-button a:hover {
+ color:white;   
 }
