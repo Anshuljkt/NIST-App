@@ -27,7 +27,8 @@
 		<preference name="android-minSdkVersion" value="7" />
 		<preference name="android-targetSdkVersion" value="19" />
 		<preference name="android-installLocation" value="auto" />
-		<preference name="SplashScreenDelay" value="7000" />
+        <preference name="SplashScreen" value="screen"/>
+		<preference name="SplashScreenDelay" value="10000" />
 		<preference name="ErrorUrl" value=""/>
 		<preference name="BackgroundColor" value="0x000000"/>
 		<preference name="KeepRunning" value="true"/>
@@ -44,6 +45,7 @@
 		<gap:plugin name="org.apache.cordova.inappbrowser"  />
 		<gap:plugin name="org.apache.cordova.network-information"  />
 		<gap:plugin name="org.apache.cordova.vibration"  />
+        <gap:plugin name="org.apache.cordova.splashscreen" />
         <gap:plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" />
     <icon src="icon.png" />
     <!-- add "<gap:platform name="ios" />" if you want to build for iOS in the future. PGBuild is currently ignoring iOS.-->
@@ -71,6 +73,7 @@
     <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
+<gap:splash src="splash.png" />
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
