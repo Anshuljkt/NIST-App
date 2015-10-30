@@ -64,6 +64,9 @@ a {
     image align-content: center;
 }
 
+.Navigation {
+ font-size:0.8em;   
+}
 .paracenter {
     text-align:center;
     color:#6f8f3a;
