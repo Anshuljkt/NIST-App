@@ -64,6 +64,11 @@ a {
     image align-content: center;
 }
 
+#lista {
+ margin-left: -15px;
+    color: dimgrey;
+}
+
 .Navigation {
  font-size:0.8em;   
 }
