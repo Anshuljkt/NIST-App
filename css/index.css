@@ -39,6 +39,7 @@ paper-tab {
     font-weight: 400;
     padding-left: 4px;
     padding-right: 4px;
+    text-align:justify;
 }
 
 .white a{
