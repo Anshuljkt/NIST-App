@@ -38,6 +38,13 @@
 		<preference name="disable-cursor" value="false" />
 		<feature name="http://api.phonegap.com/1.0/file"/>
 		<feature name="http://api.phonegap.com/1.0/geolocation"/>
+        <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+            </feature>
+        <feature name="InAppBrowser" />
+        <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+            </feature>
 		<gap:plugin name="org.apache.cordova.console"  />
 		<gap:plugin name="org.apache.cordova.device"  />
 		<gap:plugin name="org.apache.cordova.device-orientation"  />
