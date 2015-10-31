@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.nist" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
         <access origin="*" />
-    <name>NIST App</name>
+    <name>NIST</name>
     <description>A Simple NIST Guide Application Created using PhoneGap as A Personal Project. 2014-2016.</description>
     <author email="18anshula@nist.ac.th" href="http://www.nist.ac.th">Anshul Agrawal</author>
     <content src="index.html" />
