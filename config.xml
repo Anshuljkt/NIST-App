@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.nist" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+        <access origin="*" />
     <name>NIST App</name>
     <description>A Simple NIST Guide Application Created using PhoneGap as A Personal Project. 2014-2016.</description>
     <author email="18anshula@nist.ac.th" href="http://www.nist.ac.th">Anshul Agrawal</author>
@@ -33,23 +34,15 @@
 		<preference name="BackgroundColor" value="0x000000"/>
 		<preference name="KeepRunning" value="true"/>
 		<preference name="DisallowOverscroll" value="true"/>
-        <preference name="LoadingDialog" value="Loading,Please Wait..."/> 
 		<preference name="LoadUrlTimeoutValue" value="30000" />
 		<preference name="disable-cursor" value="false" />
 		<feature name="http://api.phonegap.com/1.0/file"/>
 		<feature name="http://api.phonegap.com/1.0/geolocation"/>
-        <feature name="InAppBrowser">
-        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-            </feature>
-        <feature name="InAppBrowser" />
-        <feature name="InAppBrowser">
-        <param name="ios-package" value="CDVInAppBrowser" />
-            </feature>
 		<gap:plugin name="org.apache.cordova.console"  />
 		<gap:plugin name="org.apache.cordova.device"  />
 		<gap:plugin name="org.apache.cordova.device-orientation"  />
 		<gap:plugin name="org.apache.cordova.geolocation"  />
-		<gap:plugin name="org.apache.cordova.inappbrowser"  source="npm"/>
+		<gap:plugin name="org.apache.cordova.inappbrowser" />
 		<gap:plugin name="org.apache.cordova.network-information"  />
 		<gap:plugin name="org.apache.cordova.vibration"  />
         <gap:plugin name="org.apache.cordova.splashscreen" />
@@ -85,7 +78,7 @@
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
 <gap:splash src="splash.png" />
-    <access origin="*" />
+
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
