@@ -40,13 +40,14 @@ function onDeviceReady() {
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"> </script>
         <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
     <script>
-    function show(shown, hi1, hi2, hi3, hi4) {
+    function show(shown, hi1, hi2, hi3, hi4, hi5) {
         setTimeout (function showwithdelay() {
             document.getElementById(shown).style.display='block';
             document.getElementById(hi1).style.display='none';
             document.getElementById(hi2).style.display='none';
             document.getElementById(hi3).style.display='none';
             document.getElementById(hi4).style.display='none';
+            document.getElementById(hi5).style.display='none';
   return false;
 }, 300);
     }
@@ -61,23 +62,23 @@ function onDeviceReady() {
 </head>
     <body onLoad="onLoad()"><div class="header">
     <div class="headerbutton">
-        <div class="center" fit><a href="#" class="horizontal center-center layout" onclick="return show('About','Page2','Page3','Page4','Page1');"><img src="images/NIST.png" height="83" width="200"></a></div>
+        <div class="center" fit><a href="#" class="horizontal center-center layout" onclick="return show('About','Page2','Page3','Page4','Page1','Credits');"><img src="images/NIST.png" height="83" width="200"></a></div>
       <paper-ripple></paper-ripple>
     </div>
         </div>
         <div class="white">
         <paper-tabs selected="5">
             
-            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page1','Page2','Page3','Page4','About');">Life at NIST</a>
+            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page1','Page2','Page3','Page4','About','Credits');">Life at NIST</a>
             </paper-tab>
             
-            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page2','Page1','Page3','Page4','About');">Getting to School</a>
+            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page2','Page1','Page3','Page4','About','Credits');">Getting to School</a>
             </paper-tab>
             
-            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page3','Page2','Page1','Page4','About');">Quick Links</a>
+            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page3','Page2','Page1','Page4','About','Credits');">Quick Links</a>
             </paper-tab>
             
-            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page4','Page2','Page3','Page1','About');">ECA/Sports</a>
+            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page4','Page2','Page3','Page1','About','Credits');">ECA/Sports</a>
             </paper-tab>
             
     </paper-tabs>
@@ -120,8 +121,8 @@ function onDeviceReady() {
         <div class="Title">Starting at NIST</div>
         <div class="Para">
             <img src="images/startingatnist.png" width="500px">
-            Parents may access frequently-asked questions about starting at NIST  on the <a href="#" onclick="window.open('http://www.nist.ac.th/admissions/family-support/starting-nist/', '_blank', 'location=yes,enableviewportscale=yes,toolbar=no');">NIST Support Webpage</a> to help them understand basic procedure.
-        <br><br> <a href="#" onclick="window.open('http://blogs.nist.ac.th/', '_blank', 'location=yes,enableviewportscale=yes,toolbar=no');">The NIST Blog</a> provides day-to-day information for parents and students about School events and notices.</div>
+            Parents may access frequently-asked questions about starting at NIST  on the <a href="#Starting at NIST" onclick="window.open('http://www.nist.ac.th/admissions/family-support/starting-nist/', '_blank', 'location=yes,enableviewportscale=yes,toolbar=no');">NIST Support Webpage</a> to help them understand basic procedure.
+        <br><br> <a href="#Starting at NIST" onclick="window.open('http://blogs.nist.ac.th/', '_blank', 'location=yes,enableviewportscale=yes,toolbar=no');">The NIST Blog</a> provides day-to-day information for parents and students about School events and notices.</div>
         
         <div class="Title">The Campus</div>
         <div class="Para"><div class="header"><a href="#The Campus" onclick="window.open('images/campusmap.png', '_blank', 'location=yes,enableviewportscale=yes');"><img src="images/campusmap.png" height="4000px" width="500px"></a></div>
@@ -164,12 +165,12 @@ function onDeviceReady() {
                 <div class="Para">A Google Map is included for added convenience.
                     <div class="Navigation">
                     <paper-button tabindex="0" raised class="colorful" onclick="window.open('https://www.google.com/maps/place/NIST+International+School/@13.747438,100.559785,15z/data=!4m2!3m1!1s0x0:0x99b701e4da40e686', '_system', 'location=yes,enableviewportscale=yes');"><iron-icon icon="maps:directions"></iron-icon><a href="#Google Map"> Navigate to NIST International School</a></paper-button></div></div>
-        <div class="Title">Printable Map in Thai and English</div>
+        <div class="Title">Map to NIST in Thai and English</div>
             <div class="Para">These Thai and English maps are available for easy navigation to the school. They can also be found on the NIST website, if you would wish to print them out.
         <br> <br>
-        <div class="paracenter"><a href="#Printable Map in Thai and English" onclick="window.open('images/English.png', '_system', 'location=yes,enableviewportscale=yes');">English Map</a></div>
+        <div class="paracenter"><a href="#Map to NIST in Thai and English" onclick="window.open('images/English.png', '_system', 'location=yes,enableviewportscale=yes');">English Map</a></div>
                 <br>
-        <div class="paracenter"><a href="#Printable Map in Thai and English" onclick="window.open('images/Thai.png', '_system', 'location=yes,enableviewportscale=yes');">Thai Map</a></div>
+        <div class="paracenter"><a href="#Map to NIST in Thai and English" onclick="window.open('images/Thai.png', '_system', 'location=yes,enableviewportscale=yes');">Thai Map</a></div>
             </div>
                 <div class="Title">Path to NIST via Sukhumvit Soi 15</div>
             <div class="Para">When travelling to NIST via Sukhumvit Soi 15, follow the road as in the images below (Relevant captions are above the images).<br>
@@ -265,7 +266,7 @@ function onDeviceReady() {
     <div id="About">
             <div class="Title">About this Application</div>
         <div class="Para">
-            Welcome to the Official NIST Guide App! To begin using the guide, select any of the options on the top banner. To come back to this page, click on the NIST logo.
+            Welcome to the Official NIST Guide! To begin using the guide, select any of the options on the top banner. To come back to this page, click on the NIST logo.
             <br>
             <div class="paracenter">Some parts of the application are dependent on web resources to work, because of which it is advisable to have a working internet connecting when using the app.</div>
             <img src="images/nistintro.jpg" width="500px">
@@ -280,22 +281,30 @@ function onDeviceReady() {
             <li>The goal of this Personal Project was to Improve and Expand knowledge of coding.</li>
             <li>This program is an outcome of that goal, and is intended to be an application that makes some actions easier to complete. </li>
             <li>The Global Context for this Project is Scientific and Technical Innovation.</li>
-            </ul></div>
+            </ul>
+            </div>
         </div>
+        <div class="Para">
+            
+        <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="return show('Credits','Page2','Page3','Page4','Page1','About');"><a href="#Created as a Personal Project"> Credits</a></paper-button></div>
         
+        </div>
+    </div>
+    
+    <div id="Credits" style="display:none">
         <div class="Title">About the Developer</div>
         <div class="Para">The Official NIST Guide App was created in October 2015 by Anshul Agrawal, a student at NIST International School. It will be improved and updated as needs arise. The application has been created as part of the open-source initiative, and the developer would be more than happy to provide the source code to anyone who would like to edit and modify it, with the condition that the original author is sourced properly, and permission is taken.<br>To contact Anshul for suggestions, source code requests, or feedback, please email <a href="mailto:18anshula@nist.ac.th">18anshula@nist.ac.th</a>.</div>
         <div class="Title">Works Adapted/Credits</div>
         <div class="Para">
             <div class="lista"><ol>
                 <li>The code for animations was adapted from the Polymer Project, specifically the Paper and Iron elements. The project operates under an BSD license, and the original license agreements are stored in the source code.</li>
-                <li>To learn the language of HTML/CSS and JavaScript, two online courses on Codecademy were used.</li>
+                <li>To learn the language of HTML/CSS and JavaScript, two online courses on Codecademy were taken.</li>
                 <li>Information from the NIST website has been adapted in some parts of this application.</li>
                 <li>Images were collected from webpages of Software Services, and are linked to the original source when needed. Any potential copyright claims to the application's contents will be treated swiftly, and offending content will be replaced - as long as there is logical reason for the claim. Contact Anshul Agrawal for any copyright disputes.</li>
                 <li>Credits to Am Chunnananda (Graduate of Year 2018) for the application's icon and splash screen design.</li>
-                <li>This application follows the NIST design elements listed on <a href="#" onclick="window.open('https://docs.google.com/document/d/1zB6N3sQ8YcYz_p7lBDbBuFLXkeidduVbhA3fSIgfsCI/edit#', '_system', 'location=yes, enableviewportscale=yes');">this page</a>.</li>
+                <li>This application follows the NIST design elements listed on <a href="#Works Adapted/Credits" onclick="window.open('https://docs.google.com/document/d/1zB6N3sQ8YcYz_p7lBDbBuFLXkeidduVbhA3fSIgfsCI/edit#', '_system', 'location=yes, enableviewportscale=yes');">this page</a>.</li>
                 
                 </ol></div>
-             </div>      
-    </div>
+             </div>
+        </div>
 </html>
