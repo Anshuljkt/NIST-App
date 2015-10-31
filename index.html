@@ -12,8 +12,17 @@
         <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
         <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
         <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
+        <link rel="import" href="bower_components/iron-icons/maps-icons.html">
 
-        <script src="cordova.js"></script> 
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css"> 
+<!-- Make sure you don't break the links here because it will mess things up.-->
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.11.1.min.js">
+        </script>
+        
+        <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.4.2.min.js">
+        </script>
 <script type="text/javascript" charset="utf-8">
 
 
@@ -30,8 +39,6 @@ function onDeviceReady() {
         <script src="bower_components/webcomponentsjs/webcomponents.js"> </script>
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"> </script>
         <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
-        <script type="text/javascript" src="googlemap.js"></script>      
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"> </script>
     <script>
     function show(shown, hi1, hi2, hi3, hi4) {
         setTimeout (function showwithdelay() {
@@ -53,13 +60,13 @@ function onDeviceReady() {
         
 </head>
     <body onLoad="onLoad()"><div class="header">
-    <div class="button">
-        <div class="center" fit><a href="#" class="horizontal center-center layout" onclick="return show('About','Page2','Page3','Page4','Page1');"><img src="NIST.png" height="83" width="200"></a></div>
+    <div class="headerbutton">
+        <div class="center" fit><a href="#" class="horizontal center-center layout" onclick="return show('About','Page2','Page3','Page4','Page1');"><img src="images/NIST.png" height="83" width="200"></a></div>
       <paper-ripple></paper-ripple>
     </div>
         </div>
-        <div id="white">
-        <paper-tabs selected="0">
+        <div class="white">
+        <paper-tabs selected="5">
             
             <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page1','Page2','Page3','Page4','About');">Life at NIST</a>
             </paper-tab>
@@ -70,40 +77,54 @@ function onDeviceReady() {
             <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page3','Page2','Page1','Page4','About');">Quick Links</a>
             </paper-tab>
             
-            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page4','Page2','Page3','Page1','About');">Sports</a>
+            <paper-tab link><a href="#" class="horizontal center-center layout" onclick="return show('Page4','Page2','Page3','Page1','About');">ECA/Sports</a>
             </paper-tab>
             
     </paper-tabs>
             </div>
     </body>
+    
     <div id="Page1" style="display:none">
-        <div class="Title">NIST username and password details</div>
+        <div class="Title">NIST Username and Password Details</div>
             <div class="Para">Student login details are stored on an online server,  where they are synchronized for use by different software programs NIST offers. This means that your NIST login can be used to access the following:
         <ul id="paralist">
                 <li>Veracross</li>
                 <li>NIST Portal (portal2.nist.ac.th)</li>
                 <li>Resource Portal</li>
                 <li>NIST Library Website</li>
+                <li>Google Applications offered by NIST</li>
                 </ul>
             However, School-issued Macbooks do not use the password server, and can be different from the NIST login. <br>
-            <div class="paracenter">To change your NIST password, open the menu on Veracross, or go to the <a href="#" onclick="window.open('http://portal2.nist.ac.th/community/tsc/Wiki%20Pages/Change%20Password.aspx', '_system', 'location=yes,enableviewportscale=yes');">Tech Support Portal</a>
-    </div>
+            <div class="paracenter">To change your NIST password, open the menu on Veracross, or go to the <a href="#NIST Username and Password Details" onclick="window.open('http://portal2.nist.ac.th/community/tsc/Wiki%20Pages/Change%20Password.aspx', '_system', 'location=yes,enableviewportscale=yes');">Tech Support Portal</a>
+    <br><br>For other technology-related queries, students may contact the NIST Tech Department, located in the Secondary Library.
+                </div>
         </div>
         <div class="Title">Class Schedule and Locations</div>
-            <div class="Para">To find your class schedule, log onto <a href="#" onclick="window.open('http://portals.veracross.com/nist', '_blank', 'location=yes,enableviewportscale=yes');">Veracross</a> with your NIST username and password, and select <em>Current Class Schedule</em>.
-        <div class="header"><img src="Schedule.png"></div>
+            <div class="Para">To find your class schedule, log onto <a href="#Class Schedule and Locations" onclick="window.open('http://portals.veracross.com/nist', '_blank', 'location=yes,enableviewportscale=yes,toolbar=no');">Veracross</a> with your NIST username and password, and select <em>Current Class Schedule</em>.
+        <div class="centered"><img src="images/Schedule.png" width="500"></div>
         <div class="paracenter">The schedule can be printed or downloaded as a PDF Document.</div>
                 When you first look at your schedule, you will see that there are 5 class periods in one Day Rotation. <br> 
                 <ol>
                     <li>For secondary students, one class period lasts 60 minutes.</li>
                     <li>Class periods are represented by the colored blocks on your schedule.</li>
                     <li>Each block lists the Subject, Class Name, Class Time, Teacher Name, and Location.</li>
-                    <div class="paracenter"><img src="AnnotatedSchedule.png"></div>
-                    <li>It is advisableto get to class at least five minutes before time.</li>
+                    <div class="paracenter"><img src="images/AnnotatedSchedule.png"></div>
+                    <li>It is advisable to get to class at least five minutes before time.</li>
                 </ol>        
         </div>
+        
+        <div class="Title">Understanding the 6-Day Schedule</div>
+        <div class="Para">NIST classes are based on a 6-day rotation system, as opposed to Monday-Friday schedule systems. This means that the classes per day are based on the rotation day, and are not bound to the day of the week.
+        <br><br> The day rotation changes according to the holidays and scheduling, and is not set. The yearly <a href="#Understanding the 6-Day Schedule">NIST Calendar</a> includes the day rotation for every day of the school year, and can be accessed by students.</div>
+        
+        <div class="Title">Starting at NIST</div>
+        <div class="Para">
+            <img src="images/startingatnist.png" width="500px">
+            Parents may access frequently-asked questions about starting at NIST  on the <a href="#" onclick="window.open('http://www.nist.ac.th/admissions/family-support/starting-nist/', '_blank', 'location=yes,enableviewportscale=yes,toolbar=no');">NIST Support Webpage</a> to help them understand basic procedure.
+        <br><br> <a href="#" onclick="window.open('http://blogs.nist.ac.th/', '_blank', 'location=yes,enableviewportscale=yes,toolbar=no');">The NIST Blog</a> provides day-to-day information for parents and students about School events and notices.</div>
+        
         <div class="Title">The Campus</div>
-        <div class="Para"><div class="header"><a href="#" onclick="window.open('https://www.nist.ac.th/about-nist-international-school-bangkok-thailand/campus-facilities/', '_blank', 'location=yes,enableviewportscale=yes');"><img src="campusmap.png" height="4000px" width="500px"></a></div>
+        <div class="Para"><div class="header"><a href="#The Campus" onclick="window.open('images/campusmap.png', '_blank', 'location=yes,enableviewportscale=yes');"><img src="images/campusmap.png" height="4000px" width="500px"></a></div>
             The NIST Campus has a range of buildings where classes are conducted. 
             <ul>
                 <li>Most secondary core classes (Mathematics, Sciences, Individuals and Societies, and English) are held at the Secondary building (Building 4).</li>
@@ -111,74 +132,170 @@ function onDeviceReady() {
                 <li>Design and Arts classes are in the Creative Arts Building (CAB).</li>
                 <li>Health and Physical Education classes are in or around the Sports Complex, venues ranging from the Sports Field to the Dance Room depending on the unit.</li>
             </ul>  
+            More information can be found on the <a href="#The Campus" onclick="window.open('https://www.nist.ac.th/about-nist-international-school-bangkok-thailand/campus-facilities/', '_blank', 'location=yes,enableviewportscale=yes');">NIST Website.</a> 
                 </div>
+        
         <div class="Title">NIST Cafeteria Menu</div>
-        <div class="header"><a href="#" onclick="window.open('https://www.nist.ac.th/portal/parents/nist-catering-services/', '_system', 'location=yes,enableviewportscale=yes');"><img src="nistcatering.png"></a></div>
-        <div class="Para">The NIST Catering Menu for the month is available at the <a href="#" onclick="window.open('https://www.nist.ac.th/portal/parents/nist-catering-services/', '_system', 'location=yes,enableviewportscale=yes');">NIST Cafeteria Page</a>. However, due to ingredients varying in availability throughout the month, some parts of the menu may be modified without prior notice.
+        <div class="header"><a href="#NIST Cafeteria Menu
+" onclick="window.open('https://www.nist.ac.th/portal/parents/nist-catering-services/', '_system', 'location=yes,enableviewportscale=yes');"><img src="images/nistcatering.png"></a></div>
+        <div class="Para">The NIST Elementary Catering Menu for the month is available at the <a href="#NIST Cafeteria Menu
+" onclick="window.open('https://www.nist.ac.th/portal/parents/nist-catering-services/', '_system', 'location=yes,enableviewportscale=yes');">NIST Cafeteria Page</a>. However, due to ingredients varying in availability throughout the month, some parts of the menu may be modified without prior notice.
+            <div class="paracenter">This Menu is only applicable to the NIST Elementary meal plans, and may not be accurate for the Secondary Cafeteria.</div>
         </div>
     
                                     </div>
 
     <div id="Page2" style="display:none">
         <div class="Title">BTS</div>
-            <div class="Para">NIST is accessible to pedestrians via the Asoke BTS station. A shuttle to School is available in the mornings, for an easier commute. The shuttle can be found parked at the beginning of Soi 15, and is available for teachers as well as students.
+            <div class="Para">NIST is accessible to pedestrians via the Asoke BTS station. A shuttle to school is available in the mornings, for an easier commute. The shuttle can be found parked at the beginning of Soi 15, and is available for teachers as well as students.
                 <br><br>When taking a BTS Skytrain, exit at the Asok station (E4), and leave through Exit #5. Follow the bridge and exit down the stairs in front of the Westin Hotel. Continue straight until you reach Sukhumvit Soi 15. Walk down Soi 15 until you see NIST on your right hand side.
                 </div>
         <div class="Title">MRT</div>
             <div class="Para">Exit at Sukhumvit Station, and leave through Exit 5. Follow the bridge and exit down the stairs in front of the Westin Hotel. Enter Sukhumvit Soi 15, and walk down the street until you see the entrance to NIST.</div>
         <div class="Title">BTS/MRT/Airport Rail Link Map</div>
-            <div class="Para">Click to enlarge the image. <div class="header"><a href="#" onclick="window.open('btsmap.png', '_blank', 'location=yes,enableviewportscale=yes');"><img src="btsmap.png" height="200px" width="500px"></a></div></div>
-        <div class="Title">Pedestrian Path via Sukhumvit Soi 15</div>
-            <div class="Para">When walking to NIST from Sukhumvit Soi 15, follow the road as in the images below.<br>
-                <div class="paracenter">
-                Entrance to Sukhumvit Soi 15<br>
-                <img src="img/1.png"><br>
-                Continue Straight<br>
-                <img src="img/2.png"><br>
-                Continue Past the DREAM Hotel<br>
-                <img src="img/3.png"><br>
-                <img src="img/4.png"><br>
-                NIST is on your right hand side.<br>
-                <img src="img/5.png"><br>
-                Pedestrian Walkway<br>
-                <img src="img/6.png">
-                    </div>
-        </div>
+            <div class="Para">Click to enlarge the image. <div class="header"><a href="#BTS/MRT/Airport Rail Link Map" onclick="window.open('images/btsmap.png', '_blank', 'location=yes,enableviewportscale=yes');"><img src="images/btsmap.png" height="200px" width="500px"></a></div></div>
+
         <div class="Title">Personal Car</div>
             <div class="Para">Enter at Sukhumvit Soi 15, and drive down Soi 15 until you see NIST on your right hand side. Two parking lots are avaiable near the NIST campus, and are available for cars and motorcycles.</div>
         <div class="Title">Taxi/Motorbike Taxi</div>
-            <div class="Para">Instruct the Taxi/Motorbike driver to take you to Sukhumvit Soi 15 <em>(In Thai: sook-hum-vit soy seep-ha)</em>, and continue down Soi 15 until you see NIST on your right.</div>
+            <div class="Para">Instruct the Taxi/Motorbike driver to take you to Sukhumvit Soi 15 <em>(In Thai: sook-hum-vit soy seep-ha)</em>, and continue down Soi 15 until you see NIST on your right.
+        <div class="paracenter">When riding a Motorbike in Bangkok, please make sure to wear a protective helmet. Helmets are available in many stores around Bangkok, and are essential for road safety.</div></div>
         <div class="Title">Google Map</div>
                 <div class="Para">A Google Map is included for added convenience.
-                    </div>
+                    <div class="Navigation">
+                    <paper-button tabindex="0" raised class="colorful" onclick="window.open('https://www.google.com/maps/place/NIST+International+School/@13.747438,100.559785,15z/data=!4m2!3m1!1s0x0:0x99b701e4da40e686', '_system', 'location=yes,enableviewportscale=yes');"><iron-icon icon="maps:directions"></iron-icon><a href="#Google Map"> Navigate to NIST International School</a></paper-button></div></div>
         <div class="Title">Printable Map in Thai and English</div>
-            <div class="Para">These printable Thai and English Maps are available for easy navigation to the school. They can also be found on the NIST website.
+            <div class="Para">These Thai and English maps are available for easy navigation to the school. They can also be found on the NIST website, if you would wish to print them out.
         <br> <br>
-        <div class="paracenter"><a href="#" onclick="window.open('LINK HERE', '_system', 'location=yes,enableviewportscale=yes');">English Map</a></div>
+        <div class="paracenter"><a href="#Printable Map in Thai and English" onclick="window.open('images/English.png', '_system', 'location=yes,enableviewportscale=yes');">English Map</a></div>
                 <br>
-        <div class="paracenter"><a href="#" onclick="window.open('LINK HERE', '_system', 'location=yes,enableviewportscale=yes');">Thai Map</a></div>
+        <div class="paracenter"><a href="#Printable Map in Thai and English" onclick="window.open('images/Thai.png', '_system', 'location=yes,enableviewportscale=yes');">Thai Map</a></div>
             </div>
+                <div class="Title">Path to NIST via Sukhumvit Soi 15</div>
+            <div class="Para">When travelling to NIST via Sukhumvit Soi 15, follow the road as in the images below (Relevant captions are above the images).<br>
+                <div class="paracenter">
+                Entrance to Sukhumvit Soi 15<br>
+                <img src="images/img/1.png"><br>
+                Continue Straight<br>
+                <img src="images/img/2.png"><br>
+                Continue Past the DREAM Hotel<br>
+                <img src="images/img/3.png"><br>
+                <img src="images/img/4.png"><br>
+                NIST is on your right hand side.<br>
+                <img src="images/img/5.png"><br>
+                Pedestrian Walkway<br>
+                <img src="images/img/6.png">
+                    </div>
+        </div>
                         </div>
     
     <div id="Page3" style="display:none">
-            <div class="Title">Quick Links for Daily Use</div>
+            <div class="Title">Veracross</div>
+            <div class="Para"><div class="centered"><img src="images/Veracross.png" width="500"></div>Veracross is used by students, teachers and parents to check grades, view assignments, send announcements, and much more. It allows you to sign up for ECAs (Extra-Curricular Activities), and can help you plan out your work schedule. Many assignments are submitted and graded on Veracross, so make sure you check it often. Use your NIST login (<em>without the '@nist.ac.th'</em>) to sign in.
+     <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('http://portals.veracross.com/nist', '_blank', 'location=yes,enableviewportscale=yes');"><a href="#Veracross">Veracross</a></paper-button></div>
+        </div>
+        <div class="Title">Veracross Calendar Subscription</div>
+            <div class="Para"><div class="centered"><img src="images/calendarsubscribe.png" width="500"></div>Veracross also allows students to subscribe to online calendars, which can contain classes and school events. The whole range of different calendars is available on the Veracross calendar subscription page.
+        <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('https://portals.veracross.com/nist/student/calendar/subscribe', '_system', 'location=yes,enableviewportscale=yes');"><a href="#Veracross Calendar Subscription">Veracross Calendar Subscription</a></paper-button></div>
+        </div>
+        <div class="Title">School Calendar</div>
+            <div class="Para"><div class="centered"><img src="images/calendar.png" width="400"></div>The School Calendar for the current academic year is always available on the <a href ="#School Calendar" onclick="window.open('https://www.nist.ac.th/calendar/', 'blank', 'location=yes, enableviewportscale=yes');">NIST Website</a>, in a variety of formats.
+        <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('images/calendar.pdf', '_system', 'location=yes,enableviewportscale=yes');"><a href="#School Calendar">2015-2016 NIST Calendar (PDF)</a></paper-button></div>
+        </div>
+           
+        <div class="Title">NIST Portal</div>
+            <div class="Para"><div class="centered"><img src="images/nistportal.png" width="500"></div>Many resources for subjects and school events can be found on the NIST Portal. You will need to log in with your NIST username and password in order to access the pages.
+        <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('http://portal2.nist.ac.th/Pages/default.aspx', '_system', 'location=yes,enableviewportscale=yes');"><a href="#NIST Portal">NIST Portal</a></paper-button></div>
+        </div>
+        
+        <div class="Title">Outlook Webmail</div>
+            <div class="Para"><div class="centered"><img src="images/webmail.png" width="500"></div>To access the NIST Email system, students and teachers may use the Outlook Web Application to access their accounts. This is ideal for public computers, for when email needs to be checked  on a foreign device.
+                <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('https://webmail.nist.ac.th/owa', '_system', 'location=yes,enableviewportscale=yes');"><a href="#Outlook Webmail">Outlook Webmail</a></paper-button></div>Additionally, students and teachers may log into the NIST email system on their personal devices, using the following details:
+                <ul id="paralist">
+                    <li>Type of Server = Microsoft Exchange Activesync</li>
+                    <li>Email Address = *Your NIST Email*</li>
+                    <li>Domain/Username = nist.ac.th/*Your User Name*</li>
+                    <li>Password = *Your NIST Password*</li>
+                    <li>Exchange server = webmail.nist.ac.th</li>
+                    </ul>
+        </div>
+        
+            <div class="Title">Google Drive</div>
+            <div class="Para"><div class="centered"><img src="images/gdrive.png" width="400"></div>Google Drive is a cloud storage tool used by students and teachers to store files and folders safely. Students may use Drive to make sure their work remains intact in case of technical issues. It is very useful because of its Google Docs programs, which allow groups to work collaboratively on documents in real time. To log in to Drive, use your NIST email (with the '@nist.ac.th' at the end), and use your NIST password.
+                <div class="paracenter">As a bonus, Google Drive offers the NIST community unlimited storage on the cloud!</div>
+        <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('https://drive.google.com', '_system', 'location=yes,enableviewportscale=yes');"><a href="#Google Drive">Google Drive</a></paper-button></div>
+        </div>
+        
+        <div class="Title">Google Classroom</div>
+            <div class="Para"><div class="centered"><img src="images/classroom.png" width="400"></div>Google Classroom is a simple and easy-to-use platform for teachers to assign and accept work from students. Google Classroom can be logged into with your NIST login details as well.
+<div class="paracenter">A Google Classroom Application is available for Android and iOS. Click the link to be prompted to download the App.</div>
+        <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('https://classroom.google.com/?hl=en', '_system', 'location=yes,enableviewportscale=yes');"><a href="#Google Classroom">Google Classroom</a></paper-button></div>
+        </div>
+        
+        <div class="Title">NIST on Social Media</div>
+            <div class="Para"><div class="centered"><img src="images/facebook.png" width="400"></div>NIST has an official Facebook page, YouTube channel, and Twitter Account. These are used to provide parents and students with information about NIST life, as well as important updates for the school community.
+        <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('https://www.facebook.com/NISTschool/', '_system', 'location=yes,enableviewportscale=yes');"><a href="#NIST on Social Media">NIST Facebook Page</a></paper-button></div>
+                
+                <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('https://www.youtube.com/user/NISTSchool', '_system', 'location=yes,enableviewportscale=yes');"><a href="#NIST on Social Media">NIST Youtube Channel</a></paper-button></div>
+                
+                
+                <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('https://twitter.com/NISTSchool?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor', '_system', 'location=yes,enableviewportscale=yes');"><a href="#NIST on Social Media">NIST Twitter Page</a></paper-button></div>
+        </div>
+                <div class="Title">Links for Parents</div>
+            <div class="Para"><div class="centered"><img src="images/parentlinks.png" width="400"></div>NIST offers a Parents Portal for many links to school services and information, in one convenient location. It can be found on the NIST website as well.
+        <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('http://www.nist.ac.th/portal/parents/', '_blank', 'location=yes,enableviewportscale=yes');"><a href="#Links for Parents">Parent Links Portal</a></paper-button></div>
+        </div>
     </div>
     
     <div id="Page4" style="display:none">
-            <br>Content of page 4
-
+            <div class="Title">ECA Selections at NIST</div>
+            <div class="Para">
+                <img src="images/ecas.png" width="500px"> NIST offers a  very wide range of Extra Curricular Activities (ECAs) for students to participate in. 
+                <br><br>With offerings in arts (music, drama and visual arts), sports, service, community, technology, language, and other Special Interests, every student can find and explore their passions while meeting new people.
+        <br> <br>The ECA system is split into trimesters. ECA sign-ups open on Veracross at the beginning of the trimester, and can be accessed through the Parent Veracross Portal (Parents are provided their own Veracross login that is separate from student logins). The ECA Catalogue is available for students and parents to view before making a selection.    
+        <br><br>An email is sent to parents before the registration goes online, which includes details on sign-up procedure and the ECA Catalogue.
+        <div class="paracenter"><br>It is highly suggested for new students to get involved with as many ECAs as they are interested in, to help them quickly adjust to the NIST community. Each student can find their passions in the wide range of activites offered by NIST, to help them develop as well-balanced learners.</div>
+        <br>More information about ECAs and Sports at NIST is available on the <a href="#ECA Selections at NIST" onclick="window.open('http://blogs.nist.ac.th/eca/', '_blank', 'location=yes,enableviewportscale=yes');">NIST ECA Blog </a>.
+        </div>
+        <div class="Title">NIST Athletic Schedule</div>
+        <div class="Para">The calendar for all athletic events at NIST is available on Veracross, in the <a href="#NIST Athletic Schedule" onclick="window.open('https://portals.veracross.com/nist/student/calendar/athletic', '_system', 'location=yes,enableviewportscale=yes');">Athletic Calendar Section.</a>
+        <br><br>The Athletic schedule can also be added to the default calendar application, by browsing through and subscribing to the desired calendars from the <a href="#NIST Athletic Schedule" onclick="window.open('https://portals.veracross.com/nist/student/calendar/subscribe', '_system', 'location=yes,enableviewportscale=yes');">Veracross calendar subscription page</a>.</div>
     </div>
     
     <div id="About">
-            <br>Content of page About
-        <br> Sources:
-        <ul>
-            <li>http://www.christianengvall.se/phonegap-and-google-maps/</li>
-            <li>Codecademy</li>
-            <li>Animations from Polymer Project</li>
-            <li>YouTube videos from the Paper tabs guy</li>
-            <li>NIST Website</li>
-        </ul>
+            <div class="Title">About this Application</div>
+        <div class="Para">
+            Welcome to the Official NIST Guide App! To begin using the guide, select any of the options on the top banner. To come back to this page, click on the NIST logo.
+            <br>
+            <div class="paracenter">Some parts of the application are dependent on web resources to work, because of which it is advisable to have a working internet connecting when using the app.</div>
+            <img src="images/nistintro.jpg" width="500px">
+             <br>This application has been coded using the HTML/CSS and JavaScript web languages, because of which it can run on a wide range of operating systems. <br><br>This app has been built using feedback received from NIST students and Counsellors, to provide new students with a simple guide to the school.
         
+            <div class="paracenter"> The main goal is to prove as a guide that makes daily NIST activities easier for Secondary Students and Parents, both new and old.</div>
+        </div>
+        
+        <div class="Title">Created as a Personal Project</div>
+        <div class="Para">This mobile application was created as a Personal Project through Year 10 and 11 at NIST.
+            <div id="lista"><ul>
+            <li>The goal of this Personal Project was to Improve and Expand knowledge of coding.</li>
+            <li>This program is an outcome of that goal, and is intended to be an application that makes some actions easier to complete. </li>
+            <li>The Global Context for this Project is Scientific and Technical Innovation.</li>
+            </ul></div>
+        </div>
+        
+        <div class="Title">About the Developer</div>
+        <div class="Para">The Official NIST Guide App was created in October 2015 by Anshul Agrawal, a student at NIST International School. It will be improved and updated as needs arise. The application has been created as part of the open-source initiative, and the developer would be more than happy to provide the source code to anyone who would like to edit and modify it, with the condition that the original author is sourced properly, and permission is taken.<br>To contact Anshul for suggestions, source code requests, or feedback, please email <a href="mailto:18anshula@nist.ac.th">18anshula@nist.ac.th</a>.</div>
+        <div class="Title">Works Adapted/Credits</div>
+        <div class="Para">
+            <div class="lista"><ol>
+                <li>The code for animations was adapted from the Polymer Project, specifically the Paper and Iron elements. The project operates under an BSD license, and the original license agreements are stored in the source code.</li>
+                <li>To learn the language of HTML/CSS and JavaScript, two online courses on Codecademy were used.</li>
+                <li>Information from the NIST website has been adapted in some parts of this application.</li>
+                <li>Images were collected from webpages of Software Services, and are linked to the original source when needed. Any potential copyright claims to the application's contents will be treated swiftly, and offending content will be replaced - as long as there is logical reason for the claim. Contact Anshul Agrawal for any copyright disputes.</li>
+                <li>Credits to Am Chunnananda (Graduate of Year 2018) for the application's icon and splash screen design.</li>
+                <li>This application follows the NIST design elements listed on <a href="#" onclick="window.open('https://docs.google.com/document/d/1zB6N3sQ8YcYz_p7lBDbBuFLXkeidduVbhA3fSIgfsCI/edit#', '_system', 'location=yes, enableviewportscale=yes');">this page</a>.</li>
+                
+                </ol></div>
+             </div>      
     </div>
 </html>
