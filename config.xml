@@ -33,6 +33,7 @@
 		<preference name="BackgroundColor" value="0x000000"/>
 		<preference name="KeepRunning" value="true"/>
 		<preference name="DisallowOverscroll" value="true"/>
+        <preference name="LoadingDialog" value="Loading,Please Wait..."/> 
 		<preference name="LoadUrlTimeoutValue" value="30000" />
 		<preference name="disable-cursor" value="false" />
 		<feature name="http://api.phonegap.com/1.0/file"/>
@@ -47,7 +48,7 @@
         <gap:plugin name="org.apache.cordova.splashscreen" />
         <gap:plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" />
     <icon src="icon.png" />
-    <!-- add "<gap:platform name="ios" />" if you want to build for iOS in the future. PGBuild is currently ignoring iOS.-->
+    <gap:platform name="ios" />
     <gap:platform name="android" />
     <gap:platform name="winphone" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
@@ -65,6 +66,7 @@
     <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
+    <gap:splash gap:platform="blackberry" src="res/screen/blackberry/screen-225.png" />
     		<gap:splash gap:platform="android" gap:qualifier="land-ldpi" src="res/screen/android/screen-ldpi-landscape.png" />
 		    <gap:splash gap:platform="android" gap:qualifier="land-mdpi" src="res/screen/android/screen-mdpi-landscape.png" />
 		    <gap:splash gap:platform="android" gap:qualifier="land-hdpi" src="res/screen/android/screen-hdpi-landscape.png" />
