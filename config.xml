@@ -5,7 +5,7 @@
     <description>A Simple NIST Guide Application Created using PhoneGap as A Personal Project. 2014-2016.</description>
     <author email="18anshula@nist.ac.th" href="http://www.nist.ac.th">Anshul Agrawal</author>
     <content src="index.html" />
-		<preference name="phonegap-version" value="3.5.0" />
+		<preference name="phonegap-version" value="3.7.0" />
 		<preference name="orientation" value="default" />
 		<preference name="fullscreen" value="false" />
 		<preference name="target-device" value="universal" />
@@ -47,9 +47,6 @@
 		<gap:plugin name="org.apache.cordova.vibration"  />
         <gap:plugin name="org.apache.cordova.splashscreen" />
     <icon src="icon.png" />
-    <gap:platform name="ios" />
-    <gap:platform name="android" />
-    <gap:platform name="winphone" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="res/icon/android/icon-48-mdpi.png" />
     <icon gap:platform="android" gap:qualifier="hdpi" src="res/icon/android/icon-72-hdpi.png" />
