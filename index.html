@@ -201,7 +201,7 @@ function onDeviceReady() {
         </div>
         <div class="Title">School Calendar</div>
             <div class="Para"><div class="centered"><img src="images/calendar.png" width="400"></div>The School Calendar for the current academic year is always available on the <a href ="#School Calendar" onclick="window.open('https://www.nist.ac.th/calendar/', 'blank', 'location=yes, enableviewportscale=yes');">NIST Website</a>, in a variety of formats.
-        <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('images/calendar.pdf', '_system', 'location=yes,enableviewportscale=yes');"><a href="#School Calendar">2015-2016 NIST Calendar (PDF)</a></paper-button></div>
+        <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('images/calendar.pdf', '_system');"><a href="#School Calendar">2015-2016 NIST Calendar (PDF)</a></paper-button></div>
         </div>
            
         <div class="Title">NIST Portal</div>
@@ -251,7 +251,8 @@ function onDeviceReady() {
     <div id="Page4" style="display:none">
             <div class="Title">ECA Selections at NIST</div>
             <div class="Para">
-                <img src="images/ecas.png" width="500px"> NIST offers a  very wide range of Extra Curricular Activities (ECAs) for students to participate in. 
+                <div id="imgs">
+                    <img src="images/ecas.png" width="500px"> </div> NIST offers a  very wide range of Extra Curricular Activities (ECAs) for students to participate in. 
                 <br><br>With offerings in arts (music, drama and visual arts), sports, service, community, technology, language, and other Special Interests, every student can find and explore their passions while meeting new people.
         <br> <br>The ECA system is split into trimesters. ECA sign-ups open on Veracross at the beginning of the trimester, and can be accessed through the Parent Veracross Portal (Parents are provided their own Veracross login that is separate from student logins). The ECA Catalogue is available for students and parents to view before making a selection.    
         <br><br>An email is sent to parents before the registration goes online, which includes details on sign-up procedure and the ECA Catalogue.
@@ -269,7 +270,7 @@ function onDeviceReady() {
             Welcome to the Official NIST Guide! To begin using the guide, select any of the options on the top banner. To come back to this page, click on the NIST logo.
             <br>
             <div class="paracenter">Some parts of the application are dependent on web resources to work, because of which it is advisable to have a working internet connecting when using the app.</div>
-            <img src="images/nistintro.jpg" width="500px">
+            <div id="imgs"><img src="images/nistintro.jpg" width="500px"></div>
              <br>This application has been coded using the HTML/CSS and JavaScript web languages, because of which it can run on a wide range of operating systems. <br><br>This app has been built using feedback received from NIST students and Counsellors, to provide new students with a simple guide to the school.
         
             <div class="paracenter"> The main goal is to prove as a guide that makes daily NIST activities easier for Secondary Students and Parents, both new and old.</div>
