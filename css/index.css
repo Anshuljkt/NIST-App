@@ -13,6 +13,8 @@
                     
 paper-tab {
  color:white;
+    font-size-adjust: auto;
+    font-size:0.9em;
 
 }
 
