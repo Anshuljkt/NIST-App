@@ -13,6 +13,7 @@
                     
 paper-tab {
  color:white;
+
 }
 
 
@@ -122,8 +123,8 @@ img {
         background-color: #132e52;
         color: #fff;
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
-        object-position: relative;
-        
+        object-position: center;
+        display: inline-block;
       }
 
       h3 {
