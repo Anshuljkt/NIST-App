@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+    <div class="content">
     <head>
         <title>The NIST App</title>
         <link rel="import" href="bower_components/paper-button/paper-button.html">
@@ -116,11 +117,11 @@ function onDeviceReady() {
         
         <div class="Title">Understanding the 6-Day Schedule</div>
         <div class="Para">NIST classes are based on a 6-day rotation system, as opposed to Monday-Friday schedule systems. This means that the classes per day are based on the rotation day, and are not bound to the day of the week.
-        <br><br> The day rotation changes according to the holidays and scheduling, and is not set. The yearly <a href="#Understanding the 6-Day Schedule">NIST Calendar</a> includes the day rotation for every day of the school year, and can be accessed by students.</div>
+        <br><br> The day rotation changes according to the holidays and scheduling, and is not set. The yearly <a href="#Understanding the 6-Day Schedule" onclick="window.open('http://www.nist.ac.th/calendar/', '_system', 'location=yes,enableviewportscale=yes,toolbar=no');">NIST Calendar</a> includes the day rotation for every day of the school year, and can be accessed by students.</div>
         
         <div class="Title">Starting at NIST</div>
         <div class="Para">
-            <img src="images/startingatnist.png" width="500px">
+            <div class="centered"><img src="images/startingatnist.png" width="500px"></div>
             Parents may access frequently-asked questions about starting at NIST  on the <a href="#Starting at NIST" onclick="window.open('http://www.nist.ac.th/admissions/family-support/starting-nist/', '_system', 'location=yes,enableviewportscale=yes,toolbar=no');">NIST Support Webpage</a> to help them understand basic procedure.
         <br><br> <a href="#Starting at NIST" onclick="window.open('http://blogs.nist.ac.th/', '_system', 'location=yes,enableviewportscale=yes,toolbar=no');">The NIST Blog</a> provides day-to-day information for parents and students about School events and notices.</div>
         
@@ -196,7 +197,7 @@ function onDeviceReady() {
         </div>
         <div class="Title">School Calendar</div>
             <div class="Para"><div class="centered"><img src="images/calendar.png" width="400"></div>The School Calendar for the current academic year is always available on the <a href ="#School Calendar" onclick="window.open('https://www.nist.ac.th/calendar/', 'blank', 'location=yes, enableviewportscale=yes');">NIST Website</a>.
-        <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('http://www.nist.ac.th/wp-content/uploads/2015/08/NIST-2015-2016-School-Calendar-v2.pdf', '_system', 'location=yes, enableviewportscale=yes');"><a href="#School Calendar">2015-2016 NIST Calendar (PDF)</a></paper-button></div>
+        <div class="button"><paper-button tabindex="0" raised class="colorful" onclick="window.open('http://www.nist.ac.th/calendar/', '_system', 'location=yes, enableviewportscale=yes');"><a href="#School Calendar">2015-2016 NIST Calendar (PDF)</a></paper-button></div>
         </div>
            
         <div class="Title">NIST Portal</div>
@@ -269,7 +270,7 @@ function onDeviceReady() {
             <div class="paracenter"> The main objective of this app is to act as a guide for Students as well as Parents, both new and old.</div>
             <br>
             <div class="paracenter">Some parts of the app are dependent on web resources to work, because of which it is advisable to have a working internet connection when using the app.</div>
-            <div id="imgs"><img src="images/nistintro.jpg" width="500px"></div>
+            <div class="centered"><img src="images/nistintro.jpg" width="500px"></div>
              <br>This application has been coded using the HTML/CSS and JavaScript. It has been built using feedback received from NIST Students and Counsellors in order to make the experience more effective.
         
             
@@ -307,4 +308,6 @@ function onDeviceReady() {
                 </ol></div>
              </div>
         </div>
+</div>
+        
 </html>
